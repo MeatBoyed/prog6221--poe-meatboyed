@@ -27,7 +27,7 @@ namespace RideYouRent
 
         private void AddRecipe_Click(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Navigate(new CreateRecipe());
         }
 
         private void DisplayRecipe_Click(object sender, RoutedEventArgs e)

@@ -1,0 +1,97 @@
+﻿<Page x:Class="RideYouRent.CreateRecipe"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RideYouRent"
+      mc:Ignorable="d" 
+    d:Style="{StaticResource PageStyle}"
+      Title="CreateRecipe">
+
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="ErrorMessage" Style="{StaticResource ErrorLabel}" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4"
+               Content="" />
+        <Label x:Name="SuccessMessage" Style="{StaticResource ErrorLabel}" Foreground="LightGreen" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4"
+               Content="" />
+
+        <StackPanel Margin="0, 0, 30, 0" Grid.Column="0" Grid.Row="1" >
+            <StackPanel Margin="0, 0, 0, 10">
+                <Label Style="{StaticResource InputHeaderLabel}" 
+                       Content="Recipe Details" />
+                <Label Content="Name of Recipe" Style="{StaticResource InputLabel}"
+                    Target="{Binding ElementName=TB_Code}" />
+                <TextBox x:Name="TB_Name" Margin="0, 0, 0, 10" 
+                         Style="{StaticResource InputTextBox}"/>
+
+                <Label Content="Description"  Style="{StaticResource InputLabel}"
+                    Target="{Binding ElementName=TB_Name}" />
+                <TextBox x:Name="TB_Dresc" Margin="0, 0, 0, 10" 
+                         Style="{StaticResource InputTextBox}"/>
+            </StackPanel>
+
+            <StackPanel>
+                <Label Style="{StaticResource InputHeaderLabel}" 
+                   Content="Add Step" />
+
+                <Label Content="Description"  Style="{StaticResource InputLabel}"
+                    Target="{Binding ElementName=TB_Code}" />
+                <TextBox x:Name="TB_StepDesc" Margin="0, 0, 0, 10" Style="{StaticResource InputTextBox}" />
+                <Button Content="Add Step" x:Name="AddStep" Click="AddStep_Click" Style="{StaticResource defaultButton}" />
+            </StackPanel>
+        </StackPanel>
+
+
+        <StackPanel Grid.Column="1" Grid.Row="1" >
+            <Label Style="{StaticResource InputHeaderLabel}" 
+                   Content="Add Ingredient" />
+
+            <Label Content="Ingrident's Name"  Style="{StaticResource InputLabel}"
+                Target="{Binding ElementName=TB_IngridentName}" />
+            <TextBox x:Name="TB_IngridentName" Margin="0, 0, 0, 10"
+                      Style="{StaticResource InputTextBox}" />
+            <Label Content="Quantity" Style="{StaticResource InputLabel}"
+                Target="{Binding ElementName=TB_Quantity}" />
+            <TextBox x:Name="TB_Quantity" Margin="0, 0, 0, 10" 
+                      Style="{StaticResource InputTextBox}" />
+            <Label Content="Unit of Measure" Style="{StaticResource InputLabel}"
+                Target="{Binding ElementName=TB_UnitOfMes}" />
+            <TextBox x:Name="TB_UnitOfMes" Margin="0, 0, 0, 10" 
+                      Style="{StaticResource InputTextBox}" />
+            <Label Content="Calories" Style="{StaticResource InputLabel}"
+                Target="{Binding ElementName=TB_Calories}" />
+            <TextBox x:Name="TB_Calories" Margin="0, 0, 0, 10" 
+                      Style="{StaticResource InputTextBox}" />
+            <Label Content="Food Group" Style="{StaticResource InputLabel}"
+                Target="{Binding ElementName=CB_FoodGroup}" />
+            <ComboBox x:Name="CB_FoodGroup" Style="{StaticResource InputComboBox}" Margin="0, 0, 0, 30" >
+                <ComboBoxItem Content="Starchy foods"></ComboBoxItem>
+                <ComboBoxItem Content="Vegetables and fruits"></ComboBoxItem>
+                <ComboBoxItem Content="Dry beans, peas, lentils and soya"></ComboBoxItem>
+                <ComboBoxItem Content="Chicken, fish, meat and eggs"></ComboBoxItem>
+                <ComboBoxItem Content="Milk and dairy products"></ComboBoxItem>
+                <ComboBoxItem Content="Fats and oil"></ComboBoxItem>
+                <ComboBoxItem Content="Oil"></ComboBoxItem>
+            </ComboBox>
+            <Button Content="Add Ingredient" x:Name="AddIngredient" Click="AddIngredient_Click" Style="{StaticResource defaultButton}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="3">
+            <StackPanel Background="#eceff1" MinHeight="150" Width="200" VerticalAlignment="Center" Margin="30, 0, 0, 0" Grid.Row="1" Grid.Column="2" x:Name="InputTable">
+            </StackPanel>
+
+            <Button Margin="0, 30, 0, 0" Grid.Column="3" Grid.Row="1" VerticalAlignment="Center" Content="Create Recipe" x:Name="AddRecipe" Click="AddRecipe_Click" Style="{StaticResource defaultButton}" />
+
+        </StackPanel>
+    </Grid>
+</Page>

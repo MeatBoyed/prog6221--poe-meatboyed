@@ -37,7 +37,7 @@ namespace RideYouRent
 
         private void ScaleRecipe_Click(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Navigate(new ScaleRecipe());
         }
 
         private void PieChart_Click(object sender, RoutedEventArgs e)

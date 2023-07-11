@@ -12,15 +12,7 @@ namespace RideYouRent.Models
         public static List<Recipe> recipes = new List<Recipe>();
         public static List<Recipe> menu = new List<Recipe>();
 
-        public static void PopulateRecipes()
-        {
-            recipes.Add(new Recipe("Checken Burger", "Tasty"));
-            recipes.Add(new Recipe("Beef Burger", "Tasty"));
-            recipes.Add(new Recipe("Hambruger", "Tasty"));
-            recipes.Add(new Recipe("Hambruger", "Tasty"));
-        }
-
-        public static void RemoveRecipe(Recipe recipe)
+      public static void RemoveRecipe(Recipe recipe)
         {
             recipes.Remove(recipe);
         }

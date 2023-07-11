@@ -20,6 +20,8 @@ Unused code, such as commented code, has been removed to improve the overall rea
 
 ## How to Compile and Run the application
 
+Please take note that "LiveCharts.wpf" (https://v0.lvcharts.com/) is a necessary NuGet package for this application, to fufill the POE's analysis requirment.
+
 **Step 1**
 Extract the zipped app folder.
 

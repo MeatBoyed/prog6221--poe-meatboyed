@@ -64,6 +64,9 @@
     <Compile Include="DeleteRecipe.xaml.cs">
       <DependentUpon>DeleteRecipe.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PieChart.xaml.cs">
+      <DependentUpon>PieChart.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ScaleRecipe.xaml.cs">
       <DependentUpon>ScaleRecipe.xaml</DependentUpon>
     </Compile>
@@ -93,6 +96,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PieChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ScaleRecipe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

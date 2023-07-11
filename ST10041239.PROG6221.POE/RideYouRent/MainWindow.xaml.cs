@@ -42,7 +42,7 @@ namespace RideYouRent
 
         private void PieChart_Click(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Navigate(new PieChart());
         }
 
         private void DeleteRecipe_Click(object sender, RoutedEventArgs e)

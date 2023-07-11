@@ -103,6 +103,7 @@ namespace RideYouRent
                     ResetRec();
                     ResetIngredient();
                     InputTable.Children.Clear();
+                    recipe = new Recipe();
                     return;
                 }
 

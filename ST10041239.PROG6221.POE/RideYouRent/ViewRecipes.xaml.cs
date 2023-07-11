@@ -33,7 +33,7 @@ namespace RideYouRent
         /// </summary>
         public void PopulateTable()
         {
-            foreach (Recipe recipe in StateManager.recipes)
+            foreach (Recipe recipe in StateManager.recipes.OrderBy(r => r.name))
             {
                 // Creating Lables
                 TextBlock row = new TextBlock();

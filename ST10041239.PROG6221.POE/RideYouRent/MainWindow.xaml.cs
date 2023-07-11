@@ -32,7 +32,7 @@ namespace RideYouRent
 
         private void DisplayRecipe_Click(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Navigate(new ViewRecipes());
         }
 
         private void ScaleRecipe_Click(object sender, RoutedEventArgs e)

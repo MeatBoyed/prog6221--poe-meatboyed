@@ -47,7 +47,7 @@ namespace RideYouRent
 
         private void DeleteRecipe_Click(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Navigate(new DeleteRecipe());
         }
     }
 }

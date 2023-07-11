@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:RideYouRent"
       mc:Ignorable="d" 
      d:Style="{StaticResource PageStyle}"
-      Title="ViewRecipes">
+      Title="View All Recipes">
 
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
         <Grid.ColumnDefinitions>

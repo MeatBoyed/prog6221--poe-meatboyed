@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:RideYouRent"
         mc:Ignorable="d"
        Style="{StaticResource WindowStyle}"
-        Title="MainWindow" Height="800" Width="1200">
+        Title="Private Recipe App" Height="800" Width="1200">
     <Grid Margin="10 20" HorizontalAlignment="Center"  VerticalAlignment="Top">
         <StackPanel x:Name="StackPanel" Orientation="Horizontal" VerticalAlignment="Top" 
                     HorizontalAlignment="Center">

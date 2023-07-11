@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:RideYouRent"
       mc:Ignorable="d" 
      d:Style="{StaticResource PageStyle}"
-      Title="ScaleRecipe">
+      Title="Scale A Recipe">
 
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
         <Grid.ColumnDefinitions>

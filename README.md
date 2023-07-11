@@ -8,7 +8,7 @@ GitHub POE Part 1: https://github.com/VCSTDN/prog6221-part-1-MeatBoyed
 
 Github POE Part 2: https://github.com/VCSTDN/prog6221-part2-MeatBoyed
 
-Github POE Part 3: https://github.com/MeatBoyed/prog6221--poe-meatboyed
+Github POE Part 3: https://github.com/MeatBoyed/prog6221--poe-meatboyed (** SEE 'SUBMISSION ISSUE' Below)
 
 ## Author
 Joel Shaduka
@@ -49,6 +49,13 @@ Video card that supports a minimum display resolution of WXGA (1366 by 768); Vis
 Minimum resolution assumes zoom, DPI settings, and text scaling are set at 100%. If not set to 100%, minimum resolution should be scaled accordingly. For example, if you set the Windows display ‘Scale and layout’ setting on your Surface Book, which has a 3000x2000 physical display, to 200%, then Visual Studio would see a logical screen resolution of 1500x1000, meeting the minimum 1366x768 requirement. 
 (Admurp, Visual studio 2022 system requirements)
 
+## Submission Issues
+
+I have submitted a Query to the Student Hub and send an email to my lecture (ticket no: 497275).
+It is for this reason that I am submitting my Github requirments of the POE to this private repository.
+I have recieved no email, or support in fixing my Github issues with the VCSTDN repos.
+
+I hope this repository proves my knowledge, skills, and abilities required for this Progamming module (PROG6221).
 
 ## Biliography
 
